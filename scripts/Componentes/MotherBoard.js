@@ -1,34 +1,44 @@
-import { Component } from '../componentModel.js'
+import { Component, ID } from '../componentModel.js'
+
+const id = ID()
+id.set_prefijo('GI-MB-')
+id.set_sequencia(330)
 
 const tarjetaMadre1 = new Component(
+  id.generarID(),
   'ASUS ROG Strix B550-F Gaming (WiFi 6)',
-  'Socket AM4, chipset B550, soporte para procesadores Ryzen de 3ra generación, WiFi 6, Bluetooth 5.1, LAN de 2.5Gbps, iluminación RGB',
-  200
+  200,
+  'Tarjeta Madre'
 )
 const tarjetaMadre2 = new Component(
+  id.generarID(),
   'Gigabyte B450 AORUS M',
-  'Socket AM4, chipset B450, soporte para procesadores Ryzen de 2da generación, LAN Gigabit, iluminación RGB',
-  80
+  80,
+  'Tarjeta Madre'
 )
 const tarjetaMadre3 = new Component(
+  id.generarID(),
   'ASRock B450M PRO4',
-  'Socket AM4, chipset B450, soporte para procesadores Ryzen de 2da generación, LAN Gigabit, formato Micro-ATX',
-  70
+  70,
+  'Tarjeta Madre'
 )
 const tarjetaMadre4 = new Component(
+  id.generarID(),
   'MSI MPG B550 GAMING EDGE WIFI',
-  'Socket AM4, chipset B550, soporte para procesadores Ryzen de 3ra generación, WiFi 6, Bluetooth 5.1, LAN Gigabit, iluminación RGB',
-  180
+  180,
+  'Tarjeta Madre'
 )
 const tarjetaMadre5 = new Component(
+  id.generarID(),
   'ASUS TUF Gaming X570-PRO (WiFi 6)',
-  'Socket AM4, chipset X570, soporte para procesadores Ryzen de 3ra generación, WiFi 6, Bluetooth 5.1, LAN Gigabit, iluminación RGB',
-  300
+  300,
+  'Tarjeta Madre'
 )
 const tarjetaMadre6 = new Component(
+  id.generarID(),
   'Gigabyte A520M S2H',
-  'Socket AM4, chipset A520, soporte para procesadores Ryzen de 3ra generación, LAN Gigabit, formato Micro-ATX',
-  60
+  60,
+  'Tarjeta Madre'
 )
 
 export const tarjetasMadre = [

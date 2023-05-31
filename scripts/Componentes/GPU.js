@@ -1,34 +1,44 @@
-import { Component } from '../componentModel.js'
+import { Component, ID } from '../componentModel.js'
+
+const id = ID()
+id.set_prefijo('GI-GPU-')
+id.set_sequencia(660)
 
 const tarjetaGrafica1 = new Component(
+  id.generarID(),
   'NVIDIA GeForce RTX 3080',
-  'Memoria GDDR6X de 10GB, velocidad de reloj de 1710MHz, ancho de banda de memoria de 760GB/s',
-  700
+  700,
+  'GPU'
 )
 const tarjetaGrafica2 = new Component(
+  id.generarID(),
   'AMD Radeon RX 6800 XT',
-  'Memoria GDDR6 de 16GB, velocidad de reloj de 2015MHz, ancho de banda de memoria de 512GB/s',
-  650
+  650,
+  'GPU'
 )
 const tarjetaGrafica3 = new Component(
+  id.generarID(),
   'NVIDIA GeForce RTX 3070',
-  'Memoria GDDR6 de 8GB, velocidad de reloj de 1500MHz, ancho de banda de memoria de 448GB/s',
-  500
+  500,
+  'GPU'
 )
 const tarjetaGrafica4 = new Component(
+  id.generarID(),
   'AMD Radeon RX 5700 XT',
-  'Memoria GDDR6 de 8GB, velocidad de reloj de 1605MHz, ancho de banda de memoria de 448GB/s',
-  400
+  400,
+  'GPU'
 )
 const tarjetaGrafica5 = new Component(
+  id.generarID(),
   'NVIDIA GeForce GTX 1660 Super',
-  'Memoria GDDR6 de 6GB, velocidad de reloj de 1530MHz, ancho de banda de memoria de 336GB/s',
-  250
+  250,
+  'GPU'
 )
 const tarjetaGrafica6 = new Component(
+  id.generarID(),
   'AMD Radeon RX 5500 XT',
-  'Memoria GDDR6 de 8GB, velocidad de reloj de 1717MHz, ancho de banda de memoria de 224GB/s',
-  200
+  200,
+  'GPU'
 )
 
 export const tarjetasGraficas = [

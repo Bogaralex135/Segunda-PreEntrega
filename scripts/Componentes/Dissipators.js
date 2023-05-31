@@ -1,34 +1,44 @@
-import { Component } from '../scripts/componentModel.js'
+import { Component, ID } from '../componentModel.js'
+
+const id = ID()
+id.set_prefijo('GI-DIS-')
+id.set_sequencia(220)
 
 const disipador1 = new Component(
+  id.generarID(),
   'Noctua NH-D15',
-  '2 ventiladores de 140mm, compatibilidad con sockets AM4 e Intel LGA1200, diseño de doble torre para una refrigeración óptima',
-  90
+  90,
+  'Disipador'
 )
 const disipador2 = new Component(
+  id.generarID(),
   'be quiet! Dark Rock Pro 4',
-  '2 ventiladores de 120mm, compatibilidad con sockets AM4 e Intel LGA1200, diseño de doble torre para una refrigeración silenciosa',
-  80
+  80,
+  'Disipador'
 )
 const disipador3 = new Component(
+  id.generarID(),
   'Corsair iCUE H150i ELITE CAPELLIX',
-  '3 ventiladores de 120mm, compatibilidad con sockets AM4 e Intel LGA1200, refrigeración líquida para un rendimiento excepcional',
-  200
+  200,
+  'Disipador'
 )
 const disipador4 = new Component(
+  id.generarID(),
   'Cooler Master Hyper 212 RGB Black Edition',
-  '1 ventilador de 120mm, compatibilidad con sockets AM4 e Intel LGA1200, diseño de torre para una refrigeración eficiente',
-  40
+  40,
+  'Disipador'
 )
 const disipador5 = new Component(
+  id.generarID(),
   'Arctic Freezer 34 eSports DUO',
-  '2 ventiladores de 120mm, compatibilidad con sockets AM4 e Intel LGA1200, diseño de torre para una refrigeración eficiente con una estética atractiva',
-  50
+  50,
+  'Disipador'
 )
 const disipador6 = new Component(
+  id.generarID(),
   'NZXT Kraken X73',
-  '3 ventiladores de 120mm, compatibilidad con sockets AM4 e Intel LGA1200, refrigeración líquida para un rendimiento superior con un diseño atractivo',
-  180
+  180,
+  'Disipador'
 )
 
 export const disipadores = [

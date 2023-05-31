@@ -1,34 +1,44 @@
-import { Component } from '../componentModel.js'
+import { Component, ID } from '../componentModel.js'
+
+const id = ID()
+id.set_prefijo('GI-PS-')
+id.set_sequencia(880)
 
 const fuentePoder1 = new Component(
+  id.generarID(),
   'Corsair RM850x',
-  'Potencia de 850W, certificación 80+ Gold, cables totalmente modulares, ventilador de 135mm con control de velocidad',
-  140
+  140,
+  'Fuente de Poder'
 )
 const fuentePoder2 = new Component(
+  id.generarID(),
   'EVGA SuperNOVA 750 G5',
-  'Potencia de 750W, certificación 80+ Gold, cables totalmente modulares, ventilador de 135mm con control de velocidad',
-  120
+  120,
+  'Fuente de Poder'
 )
 const fuentePoder3 = new Component(
+  id.generarID(),
   'Seasonic FOCUS GX-850',
-  'Potencia de 850W, certificación 80+ Gold, cables totalmente modulares, ventilador de 120mm con control de velocidad',
-  135
+  135,
+  'Fuente de Poder'
 )
 const fuentePoder4 = new Component(
+  id.generarID(),
   'be quiet! Straight Power 11 Platinum 750W',
-  'Potencia de 750W, certificación 80+ Platinum, cables totalmente modulares, ventilador de 135mm con control de velocidad',
-  170
+  170,
+  'Fuente de Poder'
 )
 const fuentePoder5 = new Component(
+  id.generarID(),
   'Thermaltake Toughpower Grand RGB 850W',
-  'Potencia de 850W, certificación 80+ Gold, cables totalmente modulares, ventilador de 140mm con iluminación RGB',
-  160
+  160,
+  'Fuente de Poder'
 )
 const fuentePoder6 = new Component(
+  id.generarID(),
   'Cooler Master MWE Gold 750 V2',
-  'Potencia de 750W, certificación 80+ Gold, cables totalmente modulares, ventilador de 120mm con control de velocidad',
-  100
+  100,
+  'Fuente de Poder'
 )
 
 export const fuentesDePoder = [

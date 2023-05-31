@@ -1,35 +1,47 @@
-import { Component } from '../componentModel.js'
+import { Component, ID } from '../componentModel.js'
+
+const id = ID()
+id.set_prefijo('GI-RAM-')
+id.set_sequencia(440)
 
 const memoriaRam1 = new Component(
+  id.generarID(),
   'Corsair Vengeance LPX 16GB DDR4 3200MHz C16 XMP 2.0',
-  90
+  90,
+  'RAM'
 )
 const memoriaRam2 = new Component(
+  id.generarID(),
   'G.Skill Trident Z RGB 16GB DDR4 3600MHz C16',
-  130
+  130,
+  'RAM'
 )
 const memoriaRam3 = new Component(
+  id.generarID(),
   'Kingston HyperX Fury RGB 16GB DDR4 3200MHz',
-  'Latencia C16, voltaje de 1.35V, iluminación RGB personalizable',
-  95
+  95,
+  'RAM'
 )
 const memoriaRam4 = new Component(
+  id.generarID(),
   'Crucial Ballistix RGB 16GB DDR4 3600MHz C16',
-  'Latencia C16, voltaje de 1.35V, iluminación RGB personalizable, soporte para perfiles de memoria XMP 2.0',
-  120
+  120,
+  'RAM'
 )
 const memoriaRam5 = new Component(
+  id.generarID(),
   'Team T-Force Delta RGB 16GB DDR4 3200MHz C16',
-  'Latencia C16, voltaje de 1.35V, iluminación RGB personalizable',
-  85
+  85,
+  'RAM'
 )
 const memoriaRam6 = new Component(
+  id.generarID(),
   'Corsair Dominator Platinum RGB 16GB DDR4 3200MHz C16',
-  'Latencia C16, voltaje de 1.35V, iluminación RGB personalizable, soporte para perfiles de memoria XMP 2.0',
-  150
+  150,
+  'RAM'
 )
 
-export const memoriaRam = [
+export const memoriasRam = [
   memoriaRam1,
   memoriaRam2,
   memoriaRam3,
@@ -37,4 +49,4 @@ export const memoriaRam = [
   memoriaRam5,
   memoriaRam6,
 ]
-export default memoriaRam
+export default memoriasRam
