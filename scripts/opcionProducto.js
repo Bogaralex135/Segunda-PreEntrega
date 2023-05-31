@@ -14,8 +14,14 @@ export function elegirProducto(productos) {
   let productoElegido
   do {
     productoElegido = parseInt(
-      prompt(`Empiece eligiendo su ${productos[0].categoria}: \n\n${salida}`)
+      prompt(
+        `Empiece eligiendo su ${productos[0].categoria}: \n\n${salida}7) Salir`
+      )
     )
+    if (productoElegido === 7) {
+      alert('Gracias por su visita')
+      throw new Error('El cliente salio de la tienda')
+    }
   } while (
     productoElegido <= 0 ||
     productoElegido > 6 ||

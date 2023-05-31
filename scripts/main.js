@@ -46,13 +46,20 @@ function confirmarCompra(carrito) {
   let total = descuentos(subtotal)
   mostrar += `\nSubtotal: $${subtotal}\n`
   mostrar += `\nTotal: $${total}\n\n`
-
-  const confirmacion = prompt(mostrar).toUpperCase()
-  if (confirmacion === 'SI') {
-    alert('Gracias por su compra!\n\nSe le ha generado un ticket en su consola')
-    generarTicket(carrito, total)
-  }
-  return false
+  let confirmacion = ''
+  do {
+    confirmacion = prompt(mostrar).toUpperCase()
+    if (confirmacion === 'SI') {
+      alert(
+        'Gracias por su compra!\n\nSe le ha generado un ticket en su consola'
+      )
+      generarTicket(carrito, total)
+    } else if (confirmacion === 'NO') {
+      alert('Gracias por su visita')
+    } else {
+      alert('Opcion invalida')
+    }
+  } while (confirmacion === 'NO')
 }
 
 confirmarCompra(listaCarrito)
