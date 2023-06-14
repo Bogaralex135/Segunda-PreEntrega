@@ -1,9 +1,10 @@
 class Component {
-  constructor(id, nombre, precio, categoria) {
+  constructor(id, nombre, precio, categoria, img) {
     this.id = id
     this.nombre = nombre
     this.precio = precio
     this.categoria = categoria
+    this.img = img
   }
 }
 

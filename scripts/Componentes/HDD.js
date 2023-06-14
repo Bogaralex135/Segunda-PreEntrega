@@ -4,37 +4,37 @@ const id = ID()
 id.set_prefijo('GI-HDD-')
 id.set_sequencia(550)
 
-const almacenamiento1 = new Component(
+const Samsung_970_EVO_Plus = new Component(
   id.generarID(),
   'Samsung 970 EVO Plus 1TB',
   180,
   'HDD'
 )
-const almacenamiento2 = new Component(
+const Crucial_MX500 = new Component(
   id.generarID(),
   'Crucial MX500 1TB 3D NAND SATA 2.5 Inch Internal SSD',
   110,
   'HDD'
 )
-const almacenamiento3 = new Component(
+const Seagate_BarraCuda = new Component(
   id.generarID(),
   'Seagate BarraCuda 2TB Internal Hard Drive HDD',
   55,
   'HDD'
 )
-const almacenamiento4 = new Component(
+const WD_Blue_SN550 = new Component(
   id.generarID(),
   'WD Blue SN550 1TB NVMe Internal SSD',
   105,
   'HDD'
 )
-const almacenamiento5 = new Component(
+const Toshiba_X300 = new Component(
   id.generarID(),
   'Toshiba X300 4TB Performance Desktop and Gaming Hard Drive',
   120,
   'HDD'
 )
-const almacenamiento6 = new Component(
+const Intel_660p = new Component(
   id.generarID(),
   'Intel 660p 1TB NVMe Internal SSD',
   120,
@@ -42,11 +42,11 @@ const almacenamiento6 = new Component(
 )
 
 export const discos = [
-  almacenamiento1,
-  almacenamiento2,
-  almacenamiento3,
-  almacenamiento4,
-  almacenamiento5,
-  almacenamiento6,
+  Samsung_970_EVO_Plus,
+  Crucial_MX500,
+  Seagate_BarraCuda,
+  WD_Blue_SN550,
+  Toshiba_X300,
+  Intel_660p,
 ]
 export default discos

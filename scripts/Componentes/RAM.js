@@ -4,37 +4,37 @@ const id = ID()
 id.set_prefijo('GI-RAM-')
 id.set_sequencia(440)
 
-const memoriaRam1 = new Component(
+const Corsair_Vengeance_LPX = new Component(
   id.generarID(),
   'Corsair Vengeance LPX 16GB DDR4 3200MHz C16 XMP 2.0',
   90,
   'RAM'
 )
-const memoriaRam2 = new Component(
+const G_Skill_Trident_Z = new Component(
   id.generarID(),
   'G.Skill Trident Z RGB 16GB DDR4 3600MHz C16',
   130,
   'RAM'
 )
-const memoriaRam3 = new Component(
+const Kingston_HyperX_Fury = new Component(
   id.generarID(),
   'Kingston HyperX Fury RGB 16GB DDR4 3200MHz',
   95,
   'RAM'
 )
-const memoriaRam4 = new Component(
+const Crucial_Ballistix = new Component(
   id.generarID(),
   'Crucial Ballistix RGB 16GB DDR4 3600MHz C16',
   120,
   'RAM'
 )
-const memoriaRam5 = new Component(
+const Team_T_Force_Delta = new Component(
   id.generarID(),
   'Team T-Force Delta RGB 16GB DDR4 3200MHz C16',
   85,
   'RAM'
 )
-const memoriaRam6 = new Component(
+const Corsair_Dominator = new Component(
   id.generarID(),
   'Corsair Dominator Platinum RGB 16GB DDR4 3200MHz C16',
   150,
@@ -42,11 +42,11 @@ const memoriaRam6 = new Component(
 )
 
 export const memoriasRam = [
-  memoriaRam1,
-  memoriaRam2,
-  memoriaRam3,
-  memoriaRam4,
-  memoriaRam5,
-  memoriaRam6,
+  Corsair_Vengeance_LPX,
+  G_Skill_Trident_Z,
+  Kingston_HyperX_Fury,
+  Crucial_Ballistix,
+  Team_T_Force_Delta,
+  Corsair_Dominator,
 ]
 export default memoriasRam

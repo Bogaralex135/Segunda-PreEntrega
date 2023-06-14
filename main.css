@@ -1,0 +1,55 @@
+:root {
+  --BG-Main: #0C1117;
+  --BG-Secondary: #0F1822;
+  --Gradient-1: #2F1274;
+  --Gradient-2: #520E68;
+  --Gradient-3: #7A1064;
+  --Text-color-Title: #eeeeee;
+  --Text-color-Main: #ddd;
+  --Text-color-1: #00EAFF;
+  --Text-color-2: #666FFC;
+}
+
+main {
+  padding-top: 24px;
+}
+
+
+.main__sidebar {
+  width: 35%;
+}
+
+.main__content {
+  height: 100vh;
+  overflow-y: scroll;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.content__component {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--BG-main);
+}
+
+.producto {
+  margin-right: 100px;
+}
+
+.producto h3 {
+  color: var(--Text-color-Main);
+  margin-bottom: 8px;
+}
+
+.producto p {
+  color: var(--Text-color-1);
+  text-align: center;
+}
+
+.producto img {
+  width: 160px;
+  height: 160px;
+}
